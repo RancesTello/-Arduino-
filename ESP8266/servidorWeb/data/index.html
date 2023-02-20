@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASW</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <h1 class="titulo"><a>Angeli</a> Server Web</h1>
+        <div class="linear"></div>
+    </main>
+    <div class="madre">
+        <div class="caja-led1">
+            <h2>LED 1</h2>
+            <p><button onclick=location.href="/LED=ON">ON</button></p>
+            <p><button onclick=location.href="/LED=OFF">OFF</button></p>
+            <p class="estado">%ESTADO_LED%</p>
+        </div>
+        <div class="caja-led1">
+            <h2>LED 2</h2>
+            <p><button onclick=location.href="/LED2=ON">ON</button></p>
+            <p><button onclick=location.href="/LED2=OFF">OFF</button></p>
+            <p class="estado">%ESTADO_LED2%</p>
+        </div>
+        <div class="caja-led1">
+            <h2>Sensor: Luz</h2>
+            <p><button class="bot-sensor" onclick=location.href="/REFRESH">Refrescar</button></p>
+            <p class="estado">%SENSOR%</p>
+        </div>
+    </div>
+</body>
+</html>
